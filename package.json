@@ -1,0 +1,15 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
