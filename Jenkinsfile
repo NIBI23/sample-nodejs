@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Push Docker Image') {
             steps {
-                withDockerRegistry([credentialsId: "${env.DOCKER_CREDENTIALS_ID}", url: '']) {
+                withDockerRegistry([credentialsId: "${env.DOCKER_CREDENTIALS_ID}", url: 'https://index.docker.io/v1/']) {
                     script {
                         docker.image("${env.REGISTRY}/${env.REPO}:latest").push('latest')
                     }
