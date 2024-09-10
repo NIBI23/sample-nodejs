@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/NIBI23/sample-nodejs.git'
+                git branch: 'main', url: 'https://github.com/NIBI23/sample-nodejs.git'
             }
         }
         stage('Build Docker Image') {
