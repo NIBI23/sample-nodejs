@@ -3,7 +3,7 @@ pipeline {
     environment {
         DOCKER_CREDENTIALS_ID = 'dockerhub'
         AWS_CREDENTIALS_ID = 'aws'
-        REGISTRY = 'yourdockerhubusername'
+        REGISTRY = 'nibin23'
         REPO = 'my-web-app'
     }
     stages {
